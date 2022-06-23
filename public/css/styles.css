@@ -1,0 +1,29 @@
+body{
+padding-left:  7rem;
+padding-right:  7rem;
+text-align: left;
+font-family: 'Montserrat', sans-serif;
+}
+footer{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+
+}
+h6{
+  font-size: 11px;
+  opacity: 50%;
+}
+.navbar-brand{
+/* padding: 10px; */
+text-align:left;
+}
+.container-fluid{
+  padding-left: 0;
+}
+.navbar-nav{
+  padding-left: 20rem;
+
+}
+.text{
+  padding-top: 2rem;
+}
