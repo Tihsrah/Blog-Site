@@ -51,11 +51,11 @@ app.get('/same-bro-same',function(req,res){
 //yahan par kam kar rhe the
 app.get('/posts/:postName',function(req,res){
   var userAsked=req.params.postName;
-  userAsked=_.lowerCase(userAsked);
+  var temp=_.lowerCase(userAsked);
   var flag=0;
   for (const k in dict){
     var storedTitle=_.lowerCase(k)
-    if(storedTitle===userAsked){
+    if(storedTitle===temp){
       flag=1;
       break;
     }
