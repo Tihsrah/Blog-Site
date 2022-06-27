@@ -1,29 +1,29 @@
 <%- include('partials/header') -%>
 
 
-    <form class="text" action="/" method="post">
-      <h1>Home</h1>
-      <p>
-        It's god level blog page made by your truely Tihsrah.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+<form class="text" action="/" method="post">
+  <h1>Home</h1>
+  <p>
+    It's god level blog page made by your truely Tihsrah.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
 
 
-        <% for (const key in dict){ %>
-          <h2><%=key%></h2>
-          <div id="my_text" class="ellipsis">
-          
+  <% for (const key in dict){ %>
+  <h2><%=key%></h2>
+  <div id="my_text" class="ellipsis">
 
-            <%=dict[key].substring(0, 100) + " ..."%>
-            <a href="/posts/<%=key%>">Read More</a>
 
-          </div>
-        <% } %>
+    <%=dict[key].substring(0, 100) + " ..."%>
+    <a href="/posts/<%=key%>">Read More</a>
 
-    </form>
+  </div>
+  <% } %>
+
+</form>
 
 <%- include('partials/footer') -%>
