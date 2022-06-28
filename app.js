@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-app.listen('4000', function() {});
+app.listen(process.env.PORT || 4000, function() {});
 
 // variables
 // var dict = {};
@@ -42,7 +42,7 @@ app.get('/', function(req, res) {
 
       }
       res.render("index", {s:s,foundItem:foundBlog});
-      
+
   })
 
 
