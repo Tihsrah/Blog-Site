@@ -1,13 +1,21 @@
 <%- include('partials/header') -%>
 
+
+<form class="text deleteButton" action="/delete" method="post">
+  <button class="" type="submit" name="delete" value="<%=del%>">Delete Me!</button>
+</form>
+
 <!-- <div class="box"> -->
 <form class="text" action="/" method="post">
-  <h1> <%=post %> </h1>
   <div class="">
-    <%= dict[post] %>
-  </div>
 
+    <h1> <%=post %> </h1>
+    <p><%= dict %></p>
+  </div>
 </form>
 <!-- </div> -->
+
+
+
 
 <%- include('partials/footer') -%>

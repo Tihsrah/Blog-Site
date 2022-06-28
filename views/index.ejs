@@ -13,17 +13,21 @@
   </p>
 
 
-  <% for (const key in dict){ %>
-  <h2><%=key%></h2>
-  <div id="my_text" class="ellipsis">
+<!-- it was here -->
 
+<%=s%>
+<%foundItem.forEach(function(element){ %>
 
-    <%=dict[key].substring(0, 100) + " ..."%>
-    <a href="/posts/<%=key%>">Read More</a>
-
+  <div class="extra-text">
+    <h2> <%= element.blogTitle %> </h2>
+    <%= element.blogBody.substring(0, 300) + " ..."%>
+    <a href=<%=`/posts/${element._id}`%>>Read More</a>
   </div>
-  <% } %>
+
+<%})%>
+
 
 </form>
+
 
 <%- include('partials/footer') -%>

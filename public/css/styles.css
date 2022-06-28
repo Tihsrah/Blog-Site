@@ -58,7 +58,7 @@ h6{
 }
 */
 .navbar-nav {
-  padding-left: 20rem;
+  padding-left: 6rem;
 }
 
 .navbar-nav li a:hover {
@@ -81,6 +81,21 @@ h6{
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 5px;
+}
+
+.compo{
+  margin-left: 14rem;
+}
+
+.NavButton{
+  width: 10px ;
+  height: 10px;
+  /* text-align: left; */
+}
+.deleteButton{
+  text-align: center;
+  margin-left: 1rem;
+  width: 100%;
 }
 
 .container {
@@ -106,7 +121,9 @@ h6{
 .text {
   padding-top: 2rem;
 }
-
+.extra-text{
+  padding-bottom: 2rem;
+}
 /*
 .ellipsis {
     white-space: nowrap;
